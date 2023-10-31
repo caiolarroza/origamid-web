@@ -1,0 +1,29 @@
+body {
+  margin: 20px;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  /* list-style: square inside; */
+  list-style: none;
+}
+
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  background-color: #eee;
+  padding: 10px 20px;
+  display: block;
+  color: #000;
+}
