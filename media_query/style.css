@@ -6,7 +6,25 @@ img {
 div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.div2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.galeria {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+@media (min-width: 400px) {
+  .minmax img {
+    order: 2;
+  }
+}
+
+p {
+  font-size: 2rem;
 }
 
 h1 {
@@ -15,7 +33,7 @@ h1 {
 
 @media (max-width: 600px) {
 
-  div {
+  .div {
     grid-template-columns: 1fr;
   }
 
@@ -23,7 +41,7 @@ h1 {
     background-color: lightpink;
   }
 
-  img {
+  .img {
     display: none;
   }
 }
