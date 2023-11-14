@@ -114,6 +114,11 @@ ul {
   right: -30px;
 }
 
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .botao {
   background-color: #ee2211;
   color: #fff;
@@ -143,6 +148,7 @@ ul {
   padding: 40px;
   align-self: center;
   background-image: url('./img/onda.svg');
+  /* word-break: break-all; */
 }
 
 .vantagens {
@@ -175,4 +181,10 @@ ul {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
 }
